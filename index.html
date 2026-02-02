@@ -25,13 +25,23 @@
       margin: 0;
       font-size: 28px;
       letter-spacing: 1px;
-      text-transform: uppercase; /* Uppercase header title */
     }
 
     header p {
       margin-top: 8px;
       font-size: 14px;
       opacity: 0.9;
+    }
+
+    /* All instances of company name uppercase */
+    .company-name {
+      text-transform: uppercase;
+    }
+
+    /* About section bold only */
+    .company-bold {
+      text-transform: uppercase;
+      font-weight: bold;
     }
 
     .container {
@@ -153,30 +163,33 @@
 <body>
 
   <header>
-    <h1>AMLE Africa Limited</h1>
+    <h1><span class="company-name">AMLE Africa Limited</span></h1>
     <p>General Supplies & Trading</p>
   </header>
 
   <div class="container">
 
+    <!-- About Us card -->
     <div class="card">
       <h2>About Us</h2>
       <p>
-        AMLE Africa Limited is a professional general supplies and trading company
+        <span class="company-bold">AMLE Africa Limited</span> is a professional general supplies and trading company
         committed to delivering quality products and reliable services. We focus on
         efficiency, integrity, and long-term business partnerships.
       </p>
     </div>
 
+    <!-- Company Details card -->
     <div class="card details">
       <h2>Company Details</h2>
-      <p><strong>Company Name:</strong> AMLE Africa Limited</p>
+      <p><strong>Company Name:</strong> <span class="company-name">AMLE Africa Limited</span></p>
       <p><strong>Business Type:</strong> General Supplies and Trading</p>
       <p><strong>TEL:</strong> +254 717 591 393</p>
       <p><strong>Email:</strong> amleafricalimited@gmail.com</p>
       <p><strong>Location:</strong> Riverside Drive, Keystone Park</p>
     </div>
 
+    <!-- Get in Touch card -->
     <div class="card">
       <h2>Get in Touch</h2>
       <p>
@@ -201,7 +214,7 @@
   </div>
 
   <footer>
-    <span>© 2026 AMLE Africa Limited. All Rights Reserved.</span>
+    <span>© 2026 <span class="company-name">AMLE Africa Limited</span>. All Rights Reserved.</span>
   </footer>
 
   <script>
